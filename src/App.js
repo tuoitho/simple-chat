@@ -36,7 +36,17 @@ function App() {
       setMessage("");
 
       // Gửi toàn bộ lịch sử chat để giữ ngữ cảnh
-      fetch(`https://chatbot-production-6af2.up.railway.app/generate`, {
+      // fetch(`https://chatbot-production-6af2.up.railway.app/generate`, {
+      //   method: "POST",
+      //   headers: {
+      //     "Content-Type": "application/json",
+      //     "Accept": "text/event-stream"
+      //   },
+      //   body: JSON.stringify({
+      //     messages: updatedHistory // Gửi toàn bộ lịch sử
+      //   })
+      // })
+      fetch(`https://35.213.168.149/generate`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
