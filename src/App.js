@@ -36,7 +36,7 @@ function App() {
       setMessage("");
 
       // Gửi toàn bộ lịch sử chat để giữ ngữ cảnh
-      fetch(`http://localhost:8080/generate`, {
+      fetch(`https://chatbot-production-6af2.up.railway.app/generate`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
