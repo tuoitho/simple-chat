@@ -46,7 +46,7 @@ function App() {
       //     messages: updatedHistory // Gửi toàn bộ lịch sử
       //   })
       // })
-      fetch(`https://35.213.168.149/generate`, {
+      fetch(`https://chatbot-production-6af2.up.railway.app/generate`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
